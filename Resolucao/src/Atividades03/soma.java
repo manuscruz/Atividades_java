@@ -1,8 +1,8 @@
-package Atividade03;
+package Atividades03;
 
 import java.util.Scanner;
 
-public class Soma {
+public class soma {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
