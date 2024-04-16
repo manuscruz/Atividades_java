@@ -11,8 +11,8 @@ public class Contas {
         String cliente = scanner.nextLine();
         System.out.println("Numero da conta: ");
         int num_conta = scanner.nextInt();
-        float saldo = saldo;
-        float  limiteEspecial= limite;
+        float saldo = 0;
+        float  limiteEspecial;
 
         Contapoupanca contaPoupanca = null;
         ContaEspecial contaEspecial = null;
@@ -44,7 +44,7 @@ public class Contas {
                     System.out.println("Informe o limite especial que deseja: ");
                     limiteEspecial = scanner.nextFloat();
                     contaEspecial = new ContaEspecial(cliente, num_conta, saldo, limiteEspecial);
-                    System.out.println("Conta especial criada com sucesso no valor de: R$" + limiteEspecial);
+                    System.out.println(STR."Conta especial criada com sucesso no valor de: R$\{limiteEspecial}");
                     break;
                 case 4:
                     if (contaPoupanca != null) {
